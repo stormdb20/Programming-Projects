@@ -1,0 +1,19 @@
+body {
+    background-color: greenyellow;
+    color: black;
+}
+
+pre* {
+
+    color: black;
+}
+
+form* {
+    float: left;
+    text-align: left;
+    height: auto;
+    width: auto;
+    
+
+}
+

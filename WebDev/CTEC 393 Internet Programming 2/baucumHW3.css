@@ -1,0 +1,28 @@
+body {
+    background-color: blue;
+    color: white;
+}
+
+form*{
+    float:left;
+    text-align: left;
+    height:auto;
+    width:auto;
+    
+}
+
+
+button{
+    color:white;
+    background-color: black;
+    
+}
+
+legend*{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    height:auto;
+    width:auto;
+    float:left;
+}
