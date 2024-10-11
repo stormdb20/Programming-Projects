@@ -1,0 +1,88 @@
+<!doctype html>
+<head>
+	
+	<link rel="Stylesheet" href="BaucumstylesheetPA2.css">
+	<script src="BaucumPA2script.js"></script>
+	
+	<title> BaucumPA2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+	
+</head>
+<body>
+
+	<h1>Golden Grub Coffee Shop Menu</h1>
+	<hr/>
+	<form id="menuform" method="post" action="">
+		<br/>
+		
+		<fieldset>
+            <legend>Espresso</legend>
+		<input type="radio" id="expresso" name="expresso" value="caffelatte">
+		<label>Caffe Latte (Tall: 2.95 / Grande: 3.65 / Venti: 4.15)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="caramellatte">
+		<label>Caramel Latte (Tall: 3.45 / Grande: 4.15 / Venti: 4.45)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="cappuccino">
+		<label>Cappuccino (Tall: 2.95 / Grande: 3.65 / Venti: 3.95)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="caramelmacchiato">
+		<label>Caramel Macchiato (Tall: 3.75 / Grande: 4.45 / Venti: 4.75)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="cafemocha">
+		<label>Cafe Mocha (Tall: 3.45 / Grande: 4.15 / Venti: 4.65)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="whitechocmocha">
+		<label>White Choc. Mocha (Tall: 3.65 / Grande: 4.45 / Venti: 4.75)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="caffeamericano">
+		<label>Caffe Americano (Tall: 2.25 / Grande: 2.65 / Venti: 2.95)</label><br/>
+		<input type="radio" id="expresso" name="expresso" value="espresso">
+		<label>Espresso (Solo: 1.75 / Double: 1.95)</label><br/>
+
+		</fieldset>
+		
+		<fieldset>
+            <legend>Drinks</legend>
+		<input type="radio" id="drinks" name="drinks" value="freshbrewedcoffee">
+		<label>Fresh Brewed Coffee (Tall: 1.85 / Grande: 2.10 / Venti: 2.45)</label><br/>
+		<input type="radio" id="drinks" name="drinks" value="chaitealatte">
+		<label>Chai Tea Latte (Tall: 3.65 / Grande: 4.25 / Venti: 4.65)</label><br/>
+		<input type="radio" id="drinks" name="drinks" value="brewedhottea">
+		<label>Brewed Hot Tea (Tall: 1.95 / Grande: 2.15 / Venti: 2.45)</label><br/>
+		<input type="radio" id="drinks" name="drinks" value="hotchocolate">
+		<label>Hot Chocolate (Tall: 2.75 / Grande: 3.25 / Venti: 3.45)</label><br/>
+		<input type="radio" id="drinks" name="drinks" value="whitehotchocolate">
+		<label>White Hot Chocolate (Tall: 2.75 / Grande: 3.25 / Venti: 3.45)</label><br/>
+		<br/>
+		
+		</fieldset>
+
+		<fieldset>
+            <legend>Extras</legend>
+		<input type="checkbox" id="extras" name="extras" value="flavorshot">
+		<label>Flavor Shot (0.50)</label><br/>
+		<input type="checkbox" id="extras" name="extras" value="addespressoshot">
+		<label>Add Espresso Shot (0.59)</label><br/>
+		<input type="checkbox" id="extras" name="extras" value="soyalmondmilk">
+		<label>Soy/Almond Milk (0.50)</label><br/>
+		<br/>
+
+		</fieldset>
+		
+		
+		<fieldset>
+            <legend >Payment Information</legend>
+		<input type="radio" id="pay" name="pay" value="credit" onclick="payinfoc()">
+		<label>Credit Card</label><br/>
+		<input type="radio" id="pay" name="pay" value="bsuflex" onclick="payinfob()">
+		<label>BSU Flex</label><br/>
+
+		<br/>
+		</fieldset>
+		
+		 
+		<button type="button" onclick="salesestimate()">Submit Order</button><br/>
+		<label>Your order totals to  $</label>
+		<input type="text" id="total" readonly><br/>
+		<br/>
+		<input type="reset" id="clear"><br/>
+		<br/>
+	</form>
+</body>
+</html>

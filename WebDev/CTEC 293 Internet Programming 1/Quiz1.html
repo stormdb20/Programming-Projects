@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>ACME Car Rental Reservations</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <style>
+        body {background-color: black;}
+        h1   {color: blue;}
+        h2    {color: blueviolet;}
+        form {color:white}
+
+        </style>
+</head>
+
+
+<body style="color:white">
+    <h1>ACME Car Rental Reservations</h1>
+    <hr>
+    <label for="Cars">These are the vehicles available to you.</label><br>
+    <ul>
+        <li>Compact</li><img src="compact_car.jpg" alt="Resume Picture" width="150" height="150"/><br>
+        <li>Midsize</li><img src="midsize_car.jpg" alt="Resume Picture" width="150" height="150"/><br>
+        <li>Sports Car</li><img src="sports_car.jpg" alt="Resume Picture" width="150" height="150"/><br>
+    </ul>
+    
+    <label for="Rental">You can rent these selections from these websites.</label><br>
+    <a style="color:blue" href="https://www.alamo.com/">https://www.alamo.com/</a><br>
+    <a style="color:blue" href="https://www.hertz.com/">https://www.hertz.com/</a><br>
+    <a style="color:blue" href="https://www.enterprise.com/">https://www.enterprise.com/</a><br>
+    <hr>
+    <h2>Please fillout the reservation form.</h2>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="pickup">Please select an airport pick-up location</label><br>
+        <input type="radio" id="apickup" name="pickup" value="BWI">
+        <label for="pickup">BWI</label><br>
+        <input type="radio" id="apickup" name="pickup" value="DCA">
+        <label for="pickup">DCA</label><br>
+        <input type="radio" id="apickup" name="pickup" value="IAD">
+        <label for="pickup">IAD</label><br>
+        
+
+        <label for="dropoff">Please select an airport dropoff location</label><br>
+        <input type="radio" id="adropoff" name="dropoff" value="BWI">
+        <label for="dropoff">BWI</label><br>
+        <input type="radio" id="adropoff" name="dropoff" value="DCA">
+        <label for="dropoff">DCA</label><br>
+        <input type="radio" id="adropoff" name="dropoff" value="IAD">
+        <label for="dropoff">IAD</label><br>
+
+        <label for="pickuptime">Airport Pickup (date and time):</label>
+        <input type="datetime-local" id="pickuptime" name="pickuptime"><br>
+
+        <label for="dropofftime">Airport Dropoff (date and time):</label>
+        <input type="datetime-local" id="dropofftime" name="dropofftime"><br>
+
+        
+    </form>
+
+
+
+
+</body>
+
+
+
+
+</html>

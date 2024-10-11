@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Demonstration</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip3").click(function(){
+    $("#panel3").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#flip4").click(function(){
+    $("#panel4").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip,
+#panel2, #flip2,
+#panel3, #flip3,
+#panel4, #flip4 {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  border: solid 1px yellow;
+  color:yellow;
+}
+
+#panel,#panel2,#panel3,#panel4 {
+  padding: 50px;
+  display: none;
+}
+
+h1 {
+	background-color:black;
+	color:yellow;
+}
+</style>
+</head>
+<body>
+ 
+<!--<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+-->
+<h1>CTEC TRACKS</h1>
+<h1 id="flip">Network Enterprise Infrastructure Track</h1>
+<div id="panel">
+Gain skills in cloud computing, data management and infrastructure management. Students in this track use hardware and software to build networks that enable connectivity, communication, operations and management.
+<ul>
+<li>CTEC 335 - Network Protocols (TCP/IP) 3 Credits</li>
+<li>CTEC 405 - Server Adminstration II 3 Credits</li>
+<li>CTEC 410 - Internet Technology 3 Credits</li>
+<li>CTEC 435 - Unix System Administration 3 Credits</li>
+<li>CTEC 475 - Cloud Computing 3 Credits</li>
+</ul>
+</div>
+
+<h1 id="flip2">Internet Technologies Track</h1>
+<div id="panel2">
+In this track, students take a deep dive into edge technology by learning how to configure sensors, wireless network connections and edge-computing platforms. Courses in this track prepare students to design and program prototypes and systems using the Internet of things (IoT).
+<ul>
+<li>CTEC 293 - Edge Technology 3 Credits</li>
+<li>CTEC 415 - Edge Computing 3 Credits</li>
+<li>CTEC 425 - Edge to Edge Technology 3 Credits</li>
+<li>CTEC 465 - On the Edge: The Internet of Things 3 Credits</li>
+</ul>
+</div>
+
+<h1 id="flip3">Data Science and Database Administration Track</h1>
+<div id="panel3">
+Students use technical skills to predict and describe prescriptive modeling to support decision-making. In addition, students will implement and design the architectural structure of the Oracle Database Management System.  
+
+<ul>
+<li>CTEC 298 - Symbolic Computation using Big Data 3 Credits</li>
+<li>CTEC 300 - Database Architecture 3 Credits</li>
+<li>CTEC 324 - Database Application Development 3 Credits</li>
+<li>CTEC 424 - Database Administration 3 Credits</li>
+<li>CTEC 426 - Expert Systems using Big Data 3 Credits</li>
+</div>
+
+<h1 id="flip4">Health Technology & Cybersecurity Track</h1>
+<div id="panel4">
+The healthcare field has transformed during Covid19 to extend its services to the edge of the network. This track is a new approach which is a combination of healthcare, network, and cybersecurity backgrounds to manage, detect, and secure the privacy of healthcare data through the following: email security, physical security, security controls and risk assessments.
+<ul>
+<li>BIOL 311 - Hum Anat & Physlgy I 4 Credits</li>
+<li>BIOL 312 - Hum. Anat. & Physiology II 4 Credits</li>
+<li>IDIS 240 - Medical Terminology 3 Credits</li>
+<li>CTEC 477 - Computer and Network Digital Forensics 3 Credits</li>
+<li>CTEC 300 - Database Architecture 3 Credits</li>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 2D Practice Program</title>
+</head>
+<script>
+     
+   function array2d(){
+	   
+	   const grades=[];
+	   grades[0]=[90,100,85];
+	   grades[1]=[100,70,60];
+	   grades[2]=[50,60,70];
+	   
+	   let results3=[]; //create an empty array to store averages
+	   	   
+	//average for each student?  row major  with total/average calculation
+	for (let row=0; row<grades.length; ++row){
+	   let total=0;  //resets total for each row
+	   for (let col=0; col<grades[0].length; ++col){
+		  alert("Getting data from row="+row +", col="+col);//comment this line once 2d code understood
+		  total += grades[row][col];
+		  
+	   }
+	   alert("row"+row+" total="+total); //comment this line once 2d code understood
+	   let average = total / grades[0].length;
+	   results3.push(average.toFixed(1));
+	   alert(results3[row]+" Pushed to results array for student in row" + row); //comment this line once "array" push understood
+	}
+
+	document.getElementById('average').innerHTML=results3;
+   
+   }
+   
+   
+ 
+</script>
+
+<body>
+
+	<h3>This program will show the average grade for EACH student</h3>
+	<h4> Student 1 Grades:  90,100,85 </h4>
+	<h4> Student 2 Grades:  100,70,60 </h4>
+	<h4> Student 3 Grades:  50,60,70 </h4>
+		   
+	<h3>Student averages: (contents of array are below)</h3>
+	<h3 id="average"></h3>
+	<button type="button" onclick="array2d()">Compute 2D Array!</button>
+
+</body>
+</html>

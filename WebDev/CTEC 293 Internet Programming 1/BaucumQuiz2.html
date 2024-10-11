@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cable vs Streaming Options</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+
+    <style>
+		legend {color:white;font-size:24px;}
+        legend {background-color:black}
+		body {background-color:black}
+        form {color:white}
+		h1,h2 {color:white;}
+		h1 {text-align:center;}
+        form {float:left}
+        legend {padding-top: 24px;}
+        legend {padding-bottom: 24px;}
+        
+		
+	</style>
+
+
+
+	<script>
+        function cabletotals(){
+            
+            let cable = document.querySelector( 'input[name="cable"]:checked').value;  
+            let monthly;
+                    
+            if (cable == 'dish')
+                monthly = 42.99;
+            else if (cable == "directv")
+                monthly = 49.99;
+            else if (cable == "xfinity")
+                monthly = 70.99;
+            else if (cable == "verizon")
+                monthly = 39.99;
+           
+            document.getElementById("cabletotal").value=monthly.toFixed(2);
+            document.getElementById("cabletotal").disabled = true;
+            }
+
+        function streamtotals(){
+            
+            let streamserv=0;  
+            let checkboxes = document.querySelectorAll('input[name="streaming"]:checked'); 
+            let values = []; 
+                checkboxes.forEach((checkbox) => { 
+                    values.push(checkbox.value);
+                    if (checkbox.value == 'netflix')
+                    streamserv += 6.99;
+                    else if (checkbox.value == "disney+")
+                    streamserv += 7.99;
+                    else if (checkbox.value == "primevideo")
+                    streamserv += 8.99;
+                    else if (checkbox.value == "hulu")
+                    streamserv += 7.99;
+                    else if (checkbox.value == "hbomax")
+                    streamserv += 9.99;
+                    else if (checkbox.value == "appletv")
+                    streamserv += 6.99;
+                    else if (checkbox.value == "paramount+")
+                    streamserv += 4.99;
+                    else if (checkbox.value == "peacock")
+                    streamserv += 4.99;
+                    else if (checkbox.value == "discovery")
+                    streamserv += 4.99;
+                });
+
+                document.getElementById("streamtotal").value=streamserv.toFixed(2);
+                document.getElementById("streamtotal").disabled = true;
+              
+        }
+           
+           
+        </script>
+
+
+</head>
+<body>
+
+    <h1>Cable TV vs Video Streaming Services</h1>
+    <hr>
+    <form method="post" action="">
+
+
+		
+        <fieldset>
+            <legend>Cable TV Options</legend>
+            <input type="radio" id="cable" name="cable" value="dish">
+            <label> Dish Starting price $42.99</label><br/>
+            <input type="radio" id="cable" name="cable" value="directv">
+            <label> DirecTV Starting price $49.99</label><br/>
+            <input type="radio" id="cable" name="cable" value="xfinity">
+            <label> Xfinity Starting price $70.99</label><br/>
+            <input type="radio" id="cable" name="cable" value="verizon">
+            <label> Verizon Starting price $39.99</label><br/>
+
+        </fieldset>
+		
+        <fieldset>
+            <legend>Streaming Options</legend>
+            <input type="checkbox" id="streaming" name="streaming" value="netflix">
+            <label> Netflix Starting Monthly Fee $6.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="disney+">
+            <label> Disney+ Starting Monthly Fee $7.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="primevideo">
+            <label> Prime Video Starting Monthly Fee $8.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="hulu">
+            <label> Hulu Starting Monthly Fee $7.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="hbomax">
+            <label> HBO Max Starting Monthly Fee $9.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="appletv+">
+            <label> Apple TV+ Starting Monthly Fee $6.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="paramount+">
+            <label> Paramount+ Starting Monthly Fee $4.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="peacock">
+            <label> Peacock Starting Monthly Fee $4.99</label><br/>
+            <input type="checkbox" id="streaming" name="streaming" value="discovery">
+            <label> Discovery Starting Monthly Fee $4.99</label><br/>
+            <br/>
+        </fieldset>
+	
+		<button type="button" onclick="cabletotals()">Total</button><br/>
+		<label>Cable total cost $</label>
+		<input type="text" id="cabletotal" readonly><br/>
+        <button type="button" onclick="streamtotals()">Total</button><br/>
+        <label>Stream total cost $</label>
+		<input type="text" id="streamtotal" readonly><br/>
+		<h2 id="final"></h2>
+	</form>
+
+
+</body>
+
+</html>

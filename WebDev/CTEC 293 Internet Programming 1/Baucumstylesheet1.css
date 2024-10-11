@@ -1,0 +1,75 @@
+
+img{
+    float:left;
+}
+body{
+    background-color:black;
+    color:white;
+    
+
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-color: white;
+  }
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create two adjacent columns*/
+  .column {
+    float: left;
+    padding: 3px;
+    height:100%;
+    
+  }
+  
+  .left {
+    width: 20%;
+    height:100%;
+  }
+  
+  .right {
+    width: 80%;
+    
+
+  }
+  
+  nav {
+    float: left;
+    width: 30%;
+    height: 100%;
+  
+  }
+  
+  div.column.right {
+
+    background-color: Black;
+    color:white;
+    height: 100%;
+  }
+
+  div.column.left {
+
+    background-color: aqua;
+    color:Black;
+    height: 100%;
+  }
+
+  ul {
+
+    color:Black;
+    
+  }
+  

@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: gold;
+}
+
+form{
+    float:left;
+}
+
+h1{
+
+    text-align: center;
+}
+
+button{
+    color:black;
+    background-color: gold;
+    
+}
+
+legend{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+#clear{
+    color:black;
+    background-color: gold;
+
+}
+
+#bsuflex {
+    padding-bottom: 20px;
+}
