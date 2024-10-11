@@ -1,0 +1,12 @@
+#convert back to tuple and print
+num=int(input('Enter Number:')
+num2=int(input('Enter Number:')
+num3=int(input('Enter Number:')
+t=(num, num2, num3)
+print('The tuple is ', t)
+t=list(t)
+t.append('10')
+t.insert(0, '0')
+t.insert(3, '5')
+t=(t)
+print(t)

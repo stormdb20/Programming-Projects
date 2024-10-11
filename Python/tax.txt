@@ -1,0 +1,4 @@
+This is your assessment value:
+6000.0
+Your property tax is:
+43.2
