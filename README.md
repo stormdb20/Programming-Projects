@@ -1,6 +1,6 @@
 # Personal and school projects.
 
-The Repo is separated into four directories that contain personal and academic programming and research projects from my coursework. Programming projects are separated by language except for web development projects. The web development projects tend to use a combination of PHP, HTML, CSS, and Javascript so they are all under one folder called "WebDev". The nonprogramming projects are under "Misc-Projects" and include research-based work that involves testing cybersecurity tools and concepts, developing secure networks for corporations, and creating a way to sell a product. 
+The Repo is separated into four directories that contain personal and academic programming and research projects from my coursework. Programming projects are separated by language except for web development projects. The Web development projects tend to use a combination of PHP, HTML, CSS, and Javascript so they are all under one folder called "WebDev". The nonprogramming projects are under "Misc-Projects" and include research-based work that involves testing cybersecurity tools and concepts, developing secure networks for corporations, and creating a plan to sell a product. 
 
 The hardware used in all projects was a combination of my personal laptop and desktop and Bowie State University desktops.
 
